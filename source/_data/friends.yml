@@ -1,0 +1,15 @@
+- group: locale # 分组标题
+  description: '本地连接' # 分组描述
+  items:
+    - title: QsBlog # 名称
+      avatar: /avatar.jpg # 头像
+      url: / # 链接
+      screenshot: # 截图
+      keywords: [Blog] # 关键词
+      description: Qs315490私有备忘录 # 描述
+    - title: # 名称
+      avatar: # 头像
+      url: # 链接
+      screenshot: # 截图
+      keywords: # 关键词
+      description: # 描述

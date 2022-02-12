@@ -1,0 +1,230 @@
+navbar:
+  logo:
+    img: /avatar.png
+  menu:
+    - name: 博客
+      icon: fas fa-rss
+      url: /
+    - name: 分类
+      icon: fas fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fas fa-tags
+      url: tags/
+    - name: 归档
+      icon: fas fa-archive
+      url: archives/
+    - name: 友链
+      icon: fas fa-link
+      url: friends/
+    - name: 关于
+      icon: fas fa-info-circle
+      url: about/
+  search:
+
+site_footer:
+  layout: [aplayer, social, info, copyright]
+  social:
+    - icon: fas fa-rss
+      url: atom.xml
+    - icon: fas fa-envelope
+      url: mailto:qs315490@qq.com
+  copyright: "Copyright © 2022-Now Qs315490"
+
+cover:
+  height_scheme: full # 铺满full 一半half
+  scheme: dock # 搜索search 坞dock 精选featured 焦点focus
+
+# 文章布局
+article:
+  body:
+    top_meta: [author, category, date, counter]
+    footer_widget:
+      references:
+        title: 参考资料
+        icon: fas fa-quote-left
+      copyright:
+        enable: true
+        permalink: "本文永久连接是："
+        content:
+          - "博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议"
+          - permalink
+      donate:
+        enable: true
+        images:
+          - /image/wepay.jpg
+          - /image/alipay.jpg
+    bottom_meta: [updated, tags]
+    meta_library:
+      # 默认文章作者
+      author:
+        avatar: /avatar.jpg
+        name: "Qs315490"
+        url: /
+      # 发布日期
+      date:
+        icon: fas fa-calendar-alt
+        title: "发布于："
+        fomat: "2013-02-08 09:30:26"
+      # 更新日期
+      updated:
+        icon: fas fa-edit
+        title: "更新于："
+        fomat: "2013-02-08 09:30:26"
+      # 文章分类
+      category:
+        icon: fas fa-folder-open
+      # 文章浏览计数
+      counter:
+        icon: fas fa-eye
+        unit: "次浏览"
+      # 文章字数和阅读时长
+      wordcount:
+        icon_wordcount: fas fa-keyboard
+        icon_duration: fas fa-hourglass-half
+      # 文章标签
+      tags:
+        icon: fas fa-hashtag
+
+# 侧边栏
+sidebar:
+  for_page: [blogger, category, tagcloud]
+  for_post: [blogger, toc, category, tagcloud]
+  widget_library:
+    toc:
+      class: toc
+      display: [desktop, mobile]
+      header:
+        icon: fas fa-list
+        title: 本文目录
+      list_number: false
+      min_depth: 2
+      max_depth: 6
+    blogger:
+      class: blogger
+      display: [desktop] #desktop moble
+      avatar: /avatar.jpg
+      title: Qs315490
+      subtitle: "咸鱼一个"
+      jinrishici: "这里显示博主信息"
+      social: true
+    category: # 文章分类部件
+      class: category
+      display: [desktop]
+      header:
+        icon: fas fa-folder-open
+        title: 文章分类
+        url: /categories
+    tagcloud: # 热门标签
+      class: tagcloud
+      display: [desktop]
+      header:
+        icon: fas fa-tags
+        title: 热门标签
+        url: /tags
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: "#999"
+      end_color: "#555"
+
+search:
+  enable: true
+  service: hexo
+
+# 评论
+comments:
+  title: <i class='fas fa-comments'></i> 评论
+  subtitle:
+  service: waline
+  waline:
+    js: https://npm.elemecdn.com/@waline/client/dist/Waline.min.js
+    path: /
+    placeholder: 快来评论吧~
+    serverURL: 
+
+custom_css:
+  font_smoothing: true #抗锯齿
+  navbar:
+    # shadow：卡片阴影。
+    # floatable：当鼠标移动到容器内时，呈现出浮起来的效果。
+    # blur：背景模糊效果（毛玻璃），当浏览器不支持时显示为不透明。
+    effect: [shadow, floatable, blur]
+  scrollbar:
+    size: 4px
+    border: 2px
+    color: "#2196f3"
+    hover: "#ff5722"
+  sidebar:
+    effect: [shadow, floatable]
+  body:
+    effect: [shadow, floatable]
+    highlight:
+      language: true # 显示语言
+      copy_btn: true # 拷贝按钮
+    text_align: # 对齐方向 左left 右right justify 中间center
+      h1: center
+      h2: left
+      h3: left
+      h4: left
+      p: justify
+    note:
+      icon: '\f054'
+      color: ""
+rightmenu:
+  enable: true
+  faicon: fa
+  # hr分割线
+  layout: [home, hr, darkmode, hr, music]
+
+plugins:
+  aplayer:
+    enable: true
+    js:
+      aplayer: https://npm.elemecdn.com/aplayer@1.10/dist/APlayer.min.js
+      meting: https://npm.elemecdn.com/meting@2.0/dist/Meting.min.js
+    # Required
+    server: netease # netease, tencent, kugou, xiami, baidu
+    type: playlist # song, playlist, album, search, artist
+    id: 3175833810 # song id / playlist id / album id / search keyword
+    # Optional
+    fixed: true # enable fixed mode
+    theme: "#1BCDFC" # main color
+    autoplay: false # audio autoplay
+    order: list # player play order, values: 'list', 'random'
+    loop: all # player loop play, values: 'all', 'one', 'none'
+    volume: 0.7 # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
+    list_max_height: 320px # list max height
+    list_folded: true
+  darkmode:
+    enable: true
+  killOldVersionsOfIE:
+    enable: true
+  killNoScript:
+    enable: true
+  message:
+    enable: true
+    icon:
+      default: fas fa-info-circle light-blue
+      quection: fas fa-question-circle light-blue
+    time:
+      default: 5000
+      quection: 20000
+    position: "topRight" # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
+    transitionIn: "bounceInLeft" # 弹窗打开动画 可选值：bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX
+    transitionOut: "fadeOutRight" # 弹窗关闭动画 可选值：fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX
+    titleColor: "var(--color-text)" # 标题颜色
+    messageColor: "var(--color-text)" # 消息颜色
+    backgroundColor: "var(--color-card)" # 默认背景色
+    zindex: 2147483647 # 层级
+    copyright: # 是否在复制时弹出版权提示，影响范围：ctrl+c、代码块复制按钮、右键复制选项
+      enable: true
+      title: "知识共享许可协议"
+      message: "请遵守 CC BY-NC-SA 4.0 协议。"
+      icon: "far fa-copyright light-blue"
+    aplayer: # 是否开启音乐通知；播放、暂停、失败 时的图标
+      enable: true
+      play: fas fa-play
+      pause: fas fa-pause
+    rightmenu: # 是否开启右键模块的消息通知
+      enable: true
