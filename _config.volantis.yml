@@ -34,6 +34,10 @@ site_footer:
 cover:
   height_scheme: full # 铺满full 一半half
   scheme: dock # 搜索search 坞dock 精选featured 焦点focus
+  display:
+    home: true
+    archive: false
+    others: false
 
 # 文章布局
 article:
@@ -52,8 +56,8 @@ article:
       donate:
         enable: true
         images:
-          - /image/wepay.jpg
-          - /image/alipay.jpg
+          - /images/wepay.jpg
+          - /images/alipay.jpg
     bottom_meta: [updated, tags]
     meta_library:
       # 默认文章作者

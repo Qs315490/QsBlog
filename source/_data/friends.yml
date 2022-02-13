@@ -7,9 +7,9 @@
       screenshot: # 截图
       keywords: [Blog] # 关键词
       description: Qs315490私有备忘录 # 描述
-    - title: # 名称
-      avatar: # 头像
-      url: # 链接
+    - title: Evolution Host # 名称
+      avatar: /images/friends/evolution-host.com_.png # 头像
+      url: https://evolution-host.com # 链接
       screenshot: # 截图
-      keywords: # 关键词
-      description: # 描述
+      keywords: [VPS Hosting, Game Servers, DDoS Protection] # 关键词
+      description: "一家 VPS 提供商" # 描述
