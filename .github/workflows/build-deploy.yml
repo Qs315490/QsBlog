@@ -41,4 +41,4 @@ jobs:
           git add .
           git commit -m "Action auto Deploy:$(date "+%Y/%m/%d %X")"
           git remote add origin https://${USERNAME}:${GitHub_TOKEN}@github.com/${GitHub_REPO}
-          git push origin HEAD:${REPO_BRANCH}
+          git push origin HEAD:${REPO_BRANCH} -f
