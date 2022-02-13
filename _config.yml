@@ -14,7 +14,7 @@ favicon: /avatar.png
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://qs315490.github.io/
+url: https://315490.xyz/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,6 +102,6 @@ theme: volantis
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/Qs315490/qs315490.github.io,main
+# deploy:
+#   type: git
+#   repo: https://github.com/Qs315490/qs315490.github.io,main

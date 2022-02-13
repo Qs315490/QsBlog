@@ -1,0 +1,44 @@
+name: Build and Deploy
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: 配置环境
+        run: |
+          sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install npm
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
+          sudo -E npm i hexo-cli -g
+
+      - name: 构建
+        run: |
+          npm i
+          hexo d
+
+      - name: 部署
+        env:
+          USERNAME: Qs315490
+          USEREMAIL: qs315490@qq.com
+          GitHub_REPO: Qs315490/qs315490.github.io
+          REPO_BRANCH: main
+          GitHub_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          cd public
+          git init
+          git add -all
+          git commit -m "Action auto Deploy:$(date "+%Y/%m/%d %X")"
+          git remote add origin https://${USERNAME}:${GitHub_TOKEN}@github.com/${GitHub_REPO}
+          git config --global user.name ${USERNAME}
+          git config --global user.email ${USEREMAIL}
+          git push origin HEAD:${REPO_BRANCH}
