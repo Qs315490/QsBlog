@@ -19,15 +19,17 @@ VLAN Trunk  (虚拟局域网中继技术)
 
 <!-- tab 802.1Q -->
 
-基本标准的IEEE协议，属业界标准。
+基本标准的IEEE协议，属业界标准。  
 802.1Q是在不破坏原数据帧的情况下在中间插入了区分Vlan的信息。
+{% link 802.1q_百度百科::https://baike.baidu.com/item/802.1q %}
 
 <!-- endtab -->
 
 <!-- tab ISL（Inter-Switch Link 交换机间链路） -->
 
-Cisco专有的Trunk封装方式。
+Cisco专有的Trunk封装方式。  
 ISL相当于在外面再打了一层包.在原数据帧的头尾都加了东西。
+{% link ISL_百度百科::https://baike.baidu.com/item/ISL %}
 
 <!-- endtab -->
 
