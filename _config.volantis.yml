@@ -150,7 +150,7 @@ comments:
     js: https://npm.elemecdn.com/@waline/client/dist/Waline.min.js
     path: /
     placeholder: 快来评论吧~
-    serverURL:
+    serverURL: https://blog-waline-api-j2lzfsxh9-qs315490.vercel.app/
 
 custom_css:
   font_smoothing: true #抗锯齿
