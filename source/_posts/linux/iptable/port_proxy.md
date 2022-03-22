@@ -5,7 +5,7 @@ tags: [linux,iptable,firewall]
 categories: [linux,iptable]
 ---
 
-## 命令
+# 命令
 ```sh
 iptables -t nat -A PREROUTING -p tcp -m tcp --dport 10000 -j DNAT --to-destination 1.1.1.1:30000
 iptables -t nat -A PREROUTING -p udp -m udp --dport 10000 -j DNAT --to-destination 1.1.1.1:30000
