@@ -20,11 +20,11 @@ navbar:
     - name: 关于
       icon: fas fa-info-circle
       url: about/
-    - name: hr
-    - name: Evolution Host
-      url: https://evolution-host.com
-      rows:
-        - name: VPS 提供商
+    # - name: hr
+    # - name: Evolution Host
+    #   url: https://evolution-host.com
+    #   rows:
+    #     - name: VPS 提供商
   search:
 
 site_footer:
