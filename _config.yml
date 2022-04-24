@@ -15,7 +15,7 @@ favicon: /avatar.png
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://315490.xyz/
-permalink: :year/:month/:day/:title/
+permalink: /:year/:month/:day/:title
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -91,9 +91,9 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+# include:
+# exclude:
+# ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

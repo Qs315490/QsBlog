@@ -47,7 +47,7 @@ cover:
 # 文章布局
 article:
   body:
-    top_meta: [author, category, date, counter]
+    top_meta: [author, category, date, wordcount,counter]
     footer_widget:
       references:
         title: 参考资料
