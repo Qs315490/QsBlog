@@ -30,8 +30,10 @@ navbar:
 site_footer:
   layout: [aplayer, social, info, copyright]
   social:
-    - icon: fas fa-rss
+    - icon: fas fa-atom
       url: atom.xml
+    - icon: fas fa-rss
+      url: rss.xml
     - icon: fas fa-envelope
       url: mailto:qs315490@qq.com
   copyright: "Copyright © 2022-Now Qs315490"
