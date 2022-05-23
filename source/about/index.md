@@ -1,5 +1,6 @@
 ---
 layout: docs
+date: 2020-01-01 00:00:00
 seo_title: 关于
 bottom-meta: false
 sidebar: []
