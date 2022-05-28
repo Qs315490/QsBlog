@@ -49,7 +49,7 @@ cover:
 # 文章布局
 article:
   body:
-    top_meta: [author, category, date, wordcount,counter]
+    top_meta: [author, category, date, wordcount, counter]
     footer_widget:
       references:
         title: 参考资料
@@ -147,12 +147,13 @@ search:
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
-  service: waline
-  waline:
-    js: https://npm.elemecdn.com/@waline/client/dist/Waline.min.js
-    path: /
-    placeholder: 快来评论吧~
-    serverURL: https://blog-waline-api-j2lzfsxh9-qs315490.vercel.app/
+  service: 
+# waline评论已在新版本中移除支持
+#   waline:
+#     js: https://cdn.jsdelivr.net/npm/@waline/client
+#     path: /
+#     placeholder: 快来评论吧~
+#     serverURL: https://blog-waline-api-j2lzfsxh9-qs315490.vercel.app/
 
 custom_css:
   font_smoothing: true #抗锯齿
