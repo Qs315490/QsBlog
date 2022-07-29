@@ -122,7 +122,7 @@ article:
 # 侧边栏
 sidebar:
   for_page: [blogger, category, tagcloud]
-  for_post: [blogger, toc, category, tagcloud]
+  for_post: [toc, tagcloud]
   widget_library:
     toc:
       class: toc
@@ -131,7 +131,7 @@ sidebar:
         icon: fas fa-list
         title: 本文目录
       list_number: false
-      min_depth: 2
+      min_depth: 1
       max_depth: 6
     blogger:
       class: blogger

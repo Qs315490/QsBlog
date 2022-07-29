@@ -7,7 +7,7 @@ categories: [加密算法]
 
 Base64不是加密算法, 是一种编码
 
-## 特征
+# 特征
 ```js
 var encode = Base64.encode("原文"); //加密
 var decode = Base64.decode(encode); //解密

@@ -7,7 +7,7 @@ categories: [linux]
 ---
 ssh 用于登录远程主机, 并且在远程主机上执行命令。
 
-## 使用方法
+# 使用方法
 
 ```sh
 ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]  
@@ -19,7 +19,7 @@ ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
 	[-w local_tun[:remote_tun]] destination [command]  
 ```
 
-## 参数
+# 参数
 
 参数|解释
 -|-
@@ -57,36 +57,36 @@ ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
 -4|强制 只使用 IPv4 地址. 
 -6|强制 只使用 IPv6 地址.
 
-## 演示
-### 将远程主机的一个端口映射到本地
-#### 环境
+# 演示
+## 将远程主机的一个端口映射到本地
+### 环境
 PC1: 10.0.0.1  
 PC2: 10.0.0.2  
 PC3: 20.0.0.1  
 通过 `PC3` 运行ssh连接 `PC1` 将 `PC2` 的 80 映射到 `PC3` 本地端口 8080
 
-#### 命令
+### 命令
 ```sh
 ssh -TnNL 8080:10.0.0.2:80 root@10.0.0.1
 ```
 访问 `PC3` 端口 8080 就会转发到 `PC2` 的 80 端口
 
-### 将本地主机端口映射到远程主机
-#### 环境
+## 将本地主机端口映射到远程主机
+### 环境
 PC1: 10.0.0.1  
 PC2: 10.0.0.2  
 
 通过 `PC2` 运行ssh将 `PC2` 的 80 映射到 `PC1` 8080  
 将 `PC1` 的 8080 端口转发到 `PC2` 的 80 端口
 
-#### 命令
+### 命令
 ```sh
 ssh -nNTR 8080:127.0.0.1:80 root@10.0.0.1
 ```
 访问 `PC1` 端口 8080 就会转发到 `PC2` 的 80 端口
 
-### 创建socks代理
-#### 命令
+## 创建socks代理
+### 命令
 ```sh
 ssh -TnND 1080 root@10.0.0.1
 ```

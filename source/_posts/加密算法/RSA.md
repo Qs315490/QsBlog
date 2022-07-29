@@ -8,7 +8,7 @@ categories: [加密算法]
 RSA非对称加密
 公钥加密, 私钥解密
 
-## 特征
+# 特征
 JS库名称为`JSEncrypt`,常见文件名为`jsencrypt.js`
 ```js
 //加密
