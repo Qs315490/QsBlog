@@ -57,6 +57,13 @@ SELECT @@VERSION_COMPILE_OS;
 SELECT VERSION();
 ```
 
+## 可执行注释
+/*!(数据库版本5e位数字)(要执行的命令)*/
+列如数据库版本5.8.17
+```sql
+/*!50817SELECT VERSION();*/
+```
+
 ## 当前连接数据库的人数
 ```sql
 SELECT CONNECTION_ID();
