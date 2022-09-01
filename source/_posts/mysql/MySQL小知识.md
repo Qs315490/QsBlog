@@ -64,6 +64,10 @@ SELECT VERSION();
 ```sql
 /*!50817SELECT VERSION();*/
 ```
+任何版本都要执行
+```sql
+/*!00000SELECT VERSION();*/
+```
 
 ## 当前连接数据库的人数
 ```sql
