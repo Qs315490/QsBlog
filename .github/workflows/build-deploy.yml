@@ -36,7 +36,7 @@ jobs:
           USERNAME: Qs315490
           USEREMAIL: qs315490@qq.com
           GitHub_REPO: Qs315490/qs315490.github.io
-          REPO_BRANCH: main
+          REPO_BRANCH: blog
           GitHub_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           cd public

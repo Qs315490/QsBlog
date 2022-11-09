@@ -2,7 +2,7 @@
 title: MySQL小知识
 date: 2022-08-31 12:25:01
 tags: [mysql]
-categories: [mysql]
+categories: [数据库, mysql]
 ---
 # 前言
 `SHOW TABLES FROM database` 与以下条目等价
