@@ -3,9 +3,7 @@ date: "2020/1/1"
 title: "Android下MySql无法启动解决方案"
 description: "MySql是Linux下的数据库服务器，在部分安卓手机上运行可能会报错。"
 tag: [linux,android,server,mysql]
-categories:
-  - [android,mysql]
-  - [server,mysql]
+categories: [android]
 ---
 
 # 前言
