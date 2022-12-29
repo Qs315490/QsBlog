@@ -12,7 +12,8 @@ categories: [linux,openwrt]
 {% span red::注意：openwrt 22.03版开始使用nftables，不再使用iptables。 %}
 
 # 安装所需的依赖包
-安装`ipset`, openwrt 22.03或更新版本需要安装`iptables`来兼容此教程。
+安装`ipset`, openwrt 22.03或更新版本需要安装`iptables-nft`来兼容此教程。
+PS: `nftables` 自带列表功能，不需要 `ipsec`。
 
 ```sh
 opkg update
