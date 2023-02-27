@@ -117,3 +117,4 @@ deploy:
   type: git
   repository: https://github.com/Qs315490/QsBlog
   branch: blog
+  token: $ACCESS_TOKEN
