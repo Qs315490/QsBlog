@@ -113,6 +113,7 @@ feed:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: git
-#   repo: https://github.com/Qs315490/qs315490.github.io,main
+deploy:
+  type: git
+  repository: https://github.com/Qs315490/QsBlog
+  branch: blog
