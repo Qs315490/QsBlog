@@ -30,7 +30,7 @@ jobs:
         env:
           USERNAME: Qs315490
           USEREMAIL: qs315490@qq.com
-          GitHub_TOKEN: ${{ secrets.HEXO_DEPLOY_KEY }}
+          HEXO_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh
           echo "$HEXO_DEPLOY_KEY">~/.ssh/id_rsa
