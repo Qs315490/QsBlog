@@ -24,12 +24,11 @@ jobs:
           sudo -E apt-get -qq install npm
           sudo -E apt-get -qq autoremove --purge
           sudo -E apt-get -qq clean
-          sudo -E npm i hexo-cli -g
 
       - name: 构建
         run: |
           npm i
-          hexo g
+          npx hexo g
 
       - name: 部署
         env:
