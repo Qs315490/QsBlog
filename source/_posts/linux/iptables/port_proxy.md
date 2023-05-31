@@ -1,8 +1,8 @@
 ---
-title: iptable 实现正向代理/端口转发/端口中继
+title: iptables 实现正向代理/端口转发/端口中继
 date: 2022-03-22 13:59:56
-tags: [linux,iptable,firewall]
-categories: [linux,iptable]
+tags: [linux,iptables,firewall]
+categories: [linux,iptables]
 ---
 
 # 命令

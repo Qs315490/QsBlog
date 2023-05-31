@@ -1,7 +1,7 @@
 ---
 title: openwrt防火墙只允许国内访问
 date: 2022-07-29 11:47:09
-tags: [openwrt,firewall,iptables]
+tags: [openwrt,firewall,iptables,nftables]
 categories: [linux,openwrt]
 ---
 # 前言
