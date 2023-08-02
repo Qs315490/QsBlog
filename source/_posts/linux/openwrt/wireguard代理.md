@@ -26,6 +26,7 @@ ip6tables -t nat -A zone_wan_postrouting -s 10.3.3.0/24 -j MASQUERADE
 ```
 <!-- endtab -->
 <!-- tab nftables(22.03之后) -->
+在luci界面添加规则，或者在命令行添加规则。命令行规则自行设置持久化。
 ```bash
 # OpenWrt22.03.2测试没有问题
 # 添加规则 在inet集fw4表的srcnat_wan链中，匹配是IPv6且iif(源网卡)是wg网卡的数据做masquerade(自动重写地址为出站端口)

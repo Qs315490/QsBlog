@@ -38,10 +38,10 @@ cover:
   scheme: dock # 搜索search 坞dock 精选featured 焦点focus
   title: QuickSwiftBlog
   subtitle: 一条咸鱼的翻身之路
-  background: https://api.oneneko.com/v1/bing_today
+  # background: https://api.oneneko.com/v1/bing_today
   display:
     home: true
-    archive: false
+    archive: true
     others: false
   features:
     - name: 博客
@@ -207,6 +207,14 @@ rightmenu:
   layout: [home, hr, darkmode, hr, music]
 
 plugins:
+  parallax:
+    enable: true
+    position: fixed # cover粘在封面、fixed固定为背景
+    shuffle: true
+    duration: 10000
+    fade: 1500
+    images:
+      - https://api.oneneko.com/v1/bing_today
   aplayer:
     enable: true
     js:
