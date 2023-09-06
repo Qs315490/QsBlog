@@ -5,7 +5,19 @@
 */
 
 .post-wrapper
-    opacity: 0.8 // 透明度
+    border-radius: 8px
+    backdrop-filter: blur(10px)
+
+.post-v3,.widget
+    background-color: rgba(255, 255, 255, 0.7)
+    border: 1px solid #3d3d3d
+
+.widget
+    backdrop-filter: blur(10px)
+
+.post-wrapper:hover,
+.widget:hover
+    box-shadow: 0 0 20px black
 
 // 表格居中
 table:not(figure table/* 此处排除代码块 */)
