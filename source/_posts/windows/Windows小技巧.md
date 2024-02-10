@@ -15,3 +15,8 @@ ping -a <IP地址>
 netstat -ano | findstr <端口号>
 tasklist | findstr <返回的PID>
 ```
+
+# 当前用户桌面壁纸位置
+```
+%UserProfile%\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles\
+```
