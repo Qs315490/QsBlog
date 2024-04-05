@@ -20,3 +20,25 @@ tasklist | findstr <返回的PID>
 ```
 %UserProfile%\AppData\Roaming\Microsoft\Windows\Themes\CachedFiles\
 ```
+
+# 修改文件元数据
+```powershell
+# 创建时间
+(ls file.txt).CreationTime = "2038-12-31 23:59:59"
+# 修改时间
+(ls file.txt).LastWriteTime = "2038-12-31 23:59:59"
+# 访问时间
+(ls file.txt).LastAccessTime = "2038-12-31 23:59:59"
+```
+
+# 关闭 Chrome 系统升级提示
+所有用户应用. 如果只需要当前用户生效，把 HKEY_LOCAL_MACHINE 替换为 HKEY_CURRENT_USER
+```regedit
+Windows Registry Editor Version 5.00 
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome] 
+"SuppressUnsupportedOSWarning"=dword:1
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge] 
+"SuppressUnsupportedOSWarning"=dword:1
+```
