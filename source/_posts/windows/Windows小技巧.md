@@ -42,3 +42,11 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge] 
 "SuppressUnsupportedOSWarning"=dword:1
 ```
+
+# MacOS 安装 Windows 卡准备就绪
+```regedit
+Windows Registry Editor Version 5.00
+
+[HKLOCAL MACHINE\SYSTEM\SETUP\SATUS\ChildCompletion]
+"setup.exe" = dword:3
+```
