@@ -43,6 +43,15 @@ Windows Registry Editor Version 5.00
 "SuppressUnsupportedOSWarning"=dword:1
 ```
 
+# 关闭 Microsoft Edge 使用推荐设置提示
+所有用户应用. 如果只需要当前用户生效，把 HKEY_LOCAL_MACHINE 替换为 HKEY_CURRENT_USER
+```regedit
+Windows Registry Editor Version 5.00 
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge] 
+"ShowRecommendationsEnabled"=dword:0
+```
+
 # MacOS 安装 Windows 卡准备就绪
 ```regedit
 Windows Registry Editor Version 5.00
