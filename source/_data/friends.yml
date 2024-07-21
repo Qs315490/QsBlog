@@ -1,5 +1,5 @@
 - group: locale # 分组标题
-  description: '本地连接' # 分组描述
+  description: '个人自建服务' # 分组描述
   items:
     - title: QsBlog # 名称
       avatar: /avatar.jpg # 头像
@@ -7,3 +7,8 @@
       screenshot: # 截图
       keywords: [Blog] # 关键词
       description: Qs315490私有备忘录 # 描述
+    - title: QuickSwift Answer
+      avatar: https://answer.315490.xyz/favicon.ico
+      url: https://answer.315490.xyz/
+      keywords: [answer, help]
+      description: 问答互助平台

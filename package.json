@@ -9,10 +9,10 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "7.0.0"
+    "version": "7.3.0"
   },
   "dependencies": {
-    "hexo": "^7.1.1",
+    "hexo": "^7.3.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -28,6 +28,6 @@
     "hexo-theme-volantis": "^5.8.0"
   },
   "devDependencies": {
-    "npm-check-updates": "^16.14.18"
+    "npm-check-updates": "^16.14.20"
   }
 }

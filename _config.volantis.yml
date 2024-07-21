@@ -217,7 +217,7 @@ plugins:
     duration: 10000
     fade: 1500
     images:
-      - https://api.oneneko.com/v1/bing_today
+      - https://dailybing.com/api/v1/
   aplayer:
     enable: true
     js:
