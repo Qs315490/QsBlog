@@ -59,3 +59,14 @@ Windows Registry Editor Version 5.00
 [HKLOCAL MACHINE\SYSTEM\SETUP\SATUS\ChildCompletion]
 "setup.exe" = dword:3
 ```
+
+# 关闭 DNS 多解析
+组策略
+中文系统路径:
+```
+计算机配置 -> 管理模板 -> 网络 -> DNS 客户端 -> 禁用智能多宿主名称解析
+```
+英文系统路径:
+```
+Computer Configuration -> Administrative Templates -> Network -> DNS Client -> Turn Off Multicast Name Resolution
+```
