@@ -167,13 +167,21 @@ search:
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
-  service: 
-# waline评论已在新版本中移除支持
-#   waline:
-#     js: https://cdn.jsdelivr.net/npm/@waline/client
-#     path: /
-#     placeholder: 快来评论吧~
-#     serverURL: https://blog-waline-api-j2lzfsxh9-qs315490.vercel.app/
+  service: giscus
+  giscus:
+    repo: Qs315490/QsBlog
+    repo-id: R_kgDOG1AEdA
+    category: Genneral
+    category-id: DIC_kwDOG1AEdM4ChhkI
+    mapping: pathname
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    input-position: top
+    lang: zh-CN
+    loading: lazy
+    theme:
+      light: "light"
+      dark: "dark"
 
 custom_css:
   font_smoothing: true #抗锯齿
