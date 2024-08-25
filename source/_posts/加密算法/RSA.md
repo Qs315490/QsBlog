@@ -20,5 +20,4 @@ var decrypt = new JSEncrypt();
 decrypt.setPrivateKey("私钥");
 var uncrypted = decrypt.decrypt(encrypted);//解密
 ```
-密文末尾为`==`
-加密后密文与Base64特征类似
+加密后密文与Base64特征类似，密文末尾为因为补位常为`==`。通常密钥非常的长。

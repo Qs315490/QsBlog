@@ -25,14 +25,21 @@ var decrypt = CryptoJS.DES.decrypt(encrypt,CryptoJs.enc.Utf8.parse(Key),{
 {% tabs qubie %}
 <!-- tab AES -->
 加密后密文长度是16的整数倍
+AES类型|密钥或IV位数
+-|-
+AES-128|16 bytes
+AES-192|24 bytes
+AES-256|32 bytes
 <!-- endtab -->
 
 <!-- tab DES -->
 加密后密文长度是8的整数倍
 <!-- endtab -->
 {% endtabs %}
-加密后密文可能带`/`，末尾为`=`。与Base64类似。
+加密后为二进制，常使用base64编码
 padding填充模式常见值为`CryptoJS.pad.Pkcs7`
+
+在二进制逆向中，可以通过AES加密矩阵判断程序是否使用AES加密算法。
 
 # 破解方法
 ## 暴力破解
