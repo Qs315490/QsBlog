@@ -12,8 +12,9 @@ categories: [Windows, 打印机]
 共享服务器版本过低  
 控制面板开启 `SMB1.0/CIFS` 重启解决
 
-# 0x11b
-新版本Windows出现此问题，原因未知  
+# 0x11b 与 0x40
+新版本Windows出现此问题，原因KB5005565这个更新导致  
+使用注册表或卸载更新解决  
 {% tabs e-0x11b %}
 <!-- tab 注册表文件 -->
 {% link 点击下载::/files/0x11b.reg %}
