@@ -1,5 +1,5 @@
-- group: locale # 分组标题
-  description: '个人自建服务' # 分组描述
+- group: 对外公开服务 # 分组标题
+  description: "个人自建服务" # 分组描述
   items:
     - title: QsBlog # 名称
       avatar: /avatar.jpg # 头像
@@ -10,5 +10,59 @@
     - title: QuickSwift Answer
       avatar: https://answer.315490.xyz/favicon.ico
       url: https://answer.315490.xyz/
+      keywords: [answer, help]
+      description: 问答互助平台
+    - title: qBittorrent
+      avatar: https://qbit.315490.xyz/favicon.ico
+      url: https://qbit.315490.xyz/
+      keywords: [qBittorrent, torrent]
+      description: Bittorrent下载
+    - title: Jellyfin
+      avatar: https://jellyfin.org/images/favicon.ico
+      url: https://jellyfin.315490.xyz/
+      keywords: [jellyfin, media]
+      description: 媒体中心
+
+- group: 局域网自用
+  description: "个人自建服务"
+  items:
+    - title: Jellyfin
+      avatar: https://jellyfin.org/images/favicon.ico
+      url: http://192.168.0.2:8096/
+      keywords: [jellyfin, media]
+      description: 媒体中心
+    - title: qBittorrent
+      avatar: http://192.168.0.2:8080/favicon.ico
+      url: http://192.168.0.2:8080/
+      keywords: [qBittorrent, torrent]
+      description: Bittorrent下载
+    - title: MCSManager
+      avatar: http://192.168.0.2:23333/favicon.ico
+      url: http://192.168.0.2:23333/
+      keywords: [mcsmanager, minecraft]
+      description: Minecraft服务器管理面板
+    - title: alist
+      avatar: http://192.168.0.2:5244/favicon.ico
+      url: http://192.168.0.2:5244/
+      keywords: [alist, file]
+      description: 文件管理
+    - title: qinglong
+      avatar: https://qn.whyour.cn/favicon.svg
+      url: http://192.168.0.2:5700/
+      keywords: [qinglong, file]
+      description: 定时任务
+    - title: Cockpit
+      avatar: https://cockpit-project.org/images/favicon.png
+      url: http://192.168.0.2:9090/
+      keywords: [cockpit, server]
+      description: 服务器管理面板
+    - title: portainer
+      avatar: https://www.portainer.io/hubfs/crane-icon.svg
+      url: http://192.168.0.2:9000/
+      keywords: [portainer, docker]
+      description: docker管理
+    - title: QuickSwift Answer
+      avatar: http://192.168.0.2:9080/favicon.ico
+      url: http://192.168.0.2:9080/
       keywords: [answer, help]
       description: 问答互助平台
