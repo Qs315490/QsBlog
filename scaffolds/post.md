@@ -2,6 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 updated: {{ date }}
-tags:
-categories:
+tags: []
+categories: []
+description: ""
 ---
