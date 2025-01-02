@@ -1,6 +1,7 @@
 ---
-date: "2021/3/22"
 title: "SSH"
+date: 2021-3-22
+updated: 2021-3-22
 description: "ssh 用于登录远程主机, 并且在远程主机上执行命令。"
 tag: [linux,ssh]
 categories: [linux, command]

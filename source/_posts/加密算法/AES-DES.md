@@ -1,6 +1,7 @@
 ---
 title: AES/DES
 date: 2022-04-24 14:00:26
+updated: 2024-08-25
 tags: [加密算法,AES,DES]
 categories: [加密算法]
 ---

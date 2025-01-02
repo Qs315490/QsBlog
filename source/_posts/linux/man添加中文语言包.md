@@ -1,6 +1,7 @@
 ---
-date: "2021/1/20"
 title: "man添加中文语言包"
+date: 2021-1-20
+updated: 2021-1-20
 description: "man是Linux下命令帮助文档集锦，默认语言是英语。需要安装中文包以显示中文。"
 tag: [linux,language,man]
 categories: [linux]

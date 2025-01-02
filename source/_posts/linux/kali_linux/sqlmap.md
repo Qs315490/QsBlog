@@ -1,6 +1,7 @@
 ---
-date: "2022/1/20"
 title: "sqlmap"
+date: 2022-1-20
+updated: 2022-1-20
 tag: [linux,kali_tools]
 categories: [linux,kali]
 ---

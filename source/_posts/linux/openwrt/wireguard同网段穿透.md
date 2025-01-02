@@ -1,6 +1,7 @@
 ---
 title: WireGuard同网段建立隧道
 date: 2022-12-29 20:29:09
+updated: 2022-12-29 20:29:09
 tags: [linux,openwrt,wireguard,nat-to-nat]
 categories: [linux,openwrt]
 ---

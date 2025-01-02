@@ -1,6 +1,7 @@
 ---
-date: "2022/2/19"
 title: 交换机VLAN Tag
+date: "2022/2/19"
+updated: 2022/2/19
 tag: [思科,交换机,VLAN Tagging,VLAN Trunk,虚拟局域网中继技术,IEEE 802.1q]
 categories: [思科,交换机]
 ---

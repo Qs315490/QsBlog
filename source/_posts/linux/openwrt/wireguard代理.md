@@ -1,6 +1,7 @@
 ---
 title: wireguard代理
 date: 2022-12-29 21:16:55
+updated: 2022-12-29 21:16:55
 tags: [linux,openwrt,wireguard,proxy,nat,route]
 categories: [linux,openwrt]
 ---

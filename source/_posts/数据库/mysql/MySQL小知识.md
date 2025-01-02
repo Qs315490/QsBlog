@@ -1,6 +1,7 @@
 ---
 title: MySQL小知识
 date: 2022-08-31 12:25:01
+updated: 2023-11-9 19:45
 tags: [mysql]
 categories: [数据库, mysql]
 ---
