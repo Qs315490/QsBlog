@@ -66,7 +66,7 @@ cover:
 # 文章布局
 article:
   body:
-    top_meta: [author, category, date, wordcount, counter]
+    top_meta: [author, category, date, updated, wordcount, counter]
     footer_widget:
       references:
         title: 参考资料
@@ -85,7 +85,7 @@ article:
         images:
           - /images/wepay.jpg
           - /images/alipay.jpg
-    bottom_meta: [updated, tags]
+    bottom_meta: [data, updated, tags]
     meta_library:
       # 默认文章作者
       author:
@@ -165,7 +165,7 @@ search:
 
 # 评论
 comments:
-  title: <i class='fas fa-comments'></i> 评论
+  title: <i class='fas fa-comments'>评论</i>
   subtitle:
   service: giscus
   giscus:
@@ -218,6 +218,8 @@ rightmenu:
   layout: [home, hr, darkmode, hr, music]
 
 plugins:
+  wordcount:
+    enable: true
   parallax:
     enable: true
     position: fixed # cover粘在封面、fixed固定为背景

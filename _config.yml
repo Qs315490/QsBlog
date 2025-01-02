@@ -106,7 +106,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: volantis
-plugins: 
+plugins:
   - hexo-generator-feed
 #Feed Atom
 feed:
