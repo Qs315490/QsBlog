@@ -2,7 +2,7 @@
 title: Windows 小技巧
 date: 2023-12-30 23:12:14
 updated: 2023-12-30 23:12:14
-tags: [Windows, 小技巧]
+tags: [Windows, 小技巧, 'Windows Server', 密码安全设置, DNS, IP, 主机名, 端口, 桌面壁纸, 文件元数据, Chrome, Edge]
 categories: [Windows, 小技巧]
 ---
 
@@ -71,3 +71,12 @@ Windows Registry Editor Version 5.00
 ```
 Computer Configuration -> Administrative Templates -> Network -> DNS Client -> Turn Off Multicast Name Resolution
 ```
+
+# windows Server取消密码复杂度
+## 1. 打开本地安全策略
+服务管理工具 > 工具 > 本地安全策略
+
+## 2. 密码策略
+账户策略 > 密码策略 > 密码必须符合复杂性要求 > 禁用
+
+其中，密码最长使用期限、密码最短使用期限、密码最短使用期限（分钟）可以设置为0，表示不限制
