@@ -88,7 +88,7 @@ Computer Configuration -> Administrative Templates -> Network -> DNS Client -> T
 起初我以为是(显卡(因为vscode也有问题)，浏览器)的问题，后来发现其他网友在使用其他软件时也会遇到  
 那就是微软的锅了
 ## 解决方案
-### 1. 禁用 [MPO](https://learn.microsoft.com/zh-cn/windows-hardware/drivers/display/multiplane-overlay-support)
+### 1. （推荐）禁用 [MPO](https://learn.microsoft.com/zh-cn/windows-hardware/drivers/display/multiplane-overlay-support)
 打开`注册表编辑器`，路径`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm`
 新建一个`DWORD(32位)值`，命名为`OverlayTestMode`，值设为`5`
 ```
@@ -96,3 +96,6 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm" /v OverlayTestMode /
 ```
 ### 2. 关闭硬件加速
 关了就没办法使用GPU硬件加速，导致看视频卡顿，CPU占用高，但是网页浏览正常
+### 3. 退回23H2
+### 4. 关闭浏览器设置
+Edge浏览器的`GPU rasterization`和`Accelerated 2D canvas`都禁用了就好了，可以试试。`edge://flags/`进入设置。
