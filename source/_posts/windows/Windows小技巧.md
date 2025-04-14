@@ -80,3 +80,19 @@ Computer Configuration -> Administrative Templates -> Network -> DNS Client -> T
 账户策略 > 密码策略 > 密码必须符合复杂性要求 > 禁用
 
 其中，密码最长使用期限、密码最短使用期限、密码最短使用期限（分钟）可以设置为0，表示不限制
+
+# 解决Win11 24H2下网页卡屏/卡顿/显示残留的问题
+如题，最近电脑老有问题，神烦  
+比如浏览网页，好端端的，随机的就会出现网页卡屏  
+我明明切换到另一个标签了，显示的还是上一个标签的图像  
+起初我以为是(显卡(因为vscode也有问题)，浏览器)的问题，后来发现其他网友在使用其他软件时也会遇到  
+那就是微软的锅了
+## 解决方案
+### 1. 禁用 [MPO](https://learn.microsoft.com/zh-cn/windows-hardware/drivers/display/multiplane-overlay-support)
+打开`注册表编辑器`，路径`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm`
+新建一个`DWORD(32位)值`，命名为`OverlayTestMode`，值设为`5`
+```
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm" /v OverlayTestMode /t REG_DWORD /d 5  
+```
+### 2. 关闭硬件加速
+关了就没办法使用GPU硬件加速，导致看视频卡顿，CPU占用高，但是网页浏览正常
