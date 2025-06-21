@@ -99,3 +99,16 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm" /v OverlayTestMode /
 ### 3. 退回23H2
 ### 4. 关闭浏览器设置
 Edge浏览器的`GPU rasterization`和`Accelerated 2D canvas`都禁用了就好了，可以试试。`edge://flags/`进入设置。
+
+# Windows 睡眠后，莫名唤醒
+使用以下命令查看最后一次唤醒的原因
+```cmd
+powercfg /LASTWAKE
+```
+
+## 电源按钮唤醒
+如果是有线连接，可能是局域网内其他设备的广播唤醒电脑。  
+在设备管理器里找到对应网卡，右键属性，取消勾选 `允许此设备唤醒计算机`。  
+如果需要 `网络唤醒(WoL)`功能，可以勾选 `允许此设备唤醒计算机`，然后勾选 `只允许幻术封包唤醒计算机`。
+
+如果是无线网卡也可以试试。虽然无线网卡理论上没有这个功能，但是无线网卡也有唤醒能力。  
