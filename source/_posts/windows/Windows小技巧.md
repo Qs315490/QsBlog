@@ -121,3 +121,9 @@ powercfg /LASTWAKE
 由于`edge游戏助手`在系统更新时`会自动重新安装`，所以在更新系统后，需要再次`重复删除步骤`。
 
 如果不幸触发了该bug，不用担心，你的所有记录都没有真正的丢失。在`删除edge游戏助手`，确保所有edge的进程关闭后，彻底地重启edge，`即可恢复所有的记录、收藏夹和网站的登录状态`。
+
+# win7蓝屏A5解决方法 10代以上主板蓝屏A5
+复制 [win7蓝屏A5问题解决修改文件acpi.zip](/win7蓝屏A5问题解决修改文件acpi.zip) 到`C:\Windows\System32\drivers\`目录下，替换掉 `acpi.sys` 文件
+```
+C:\Windows\System32\drivers\acpi.sys
+```
