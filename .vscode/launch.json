@@ -11,8 +11,11 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "runtimeExecutable": "npm",
-            "runtimeArgs": ["run","server"]
+            "runtimeExecutable": "pnpm",
+            "runtimeArgs": [
+                "run",
+                "server"
+            ]
         }
     ]
 }
