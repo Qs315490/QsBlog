@@ -1,6 +1,6 @@
 ---
 title: PVE开启6-15代Intel核显虚拟化SR-IOV/GVT-g技术
-tags: [PVE, SR-IOV, GVT-g]
+tags: [PVE, KVM, SR-IOV, GVT-g]
 categories: [linux, PVE]
 description: ''
 date: 2026-02-09 16:51:51
