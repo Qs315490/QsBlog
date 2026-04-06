@@ -1,8 +1,8 @@
 ---
 title: KVM/PVE问题解决
-tags: [KVM, Linux, AMD GPU, PVE, PROXMAX]
-categories: [linux, KVM]
-description: 'KVM 常见问题解决，以及一些小技巧'
+tags: [KVM, Linux, AMD GPU, PVE, PROXMAX, spice, 鼠标偏移]
+categories: [linux, PVE]
+description: 'KVM/PVE 常见问题解决，以及一些小技巧'
 date: 2026-02-09 16:30:29
 updated: 2026-02-09 16:30:29
 ---
@@ -23,3 +23,14 @@ cpu-model: hiddenvm
 
 EOF
 ```
+
+# PVE鼠标偏移解决
+spice鼠标偏移，在虚拟机中鼠标会飘，在 `/etc/pve/qemu-server/xxx.conf` 中加入：
+```yml
+tablet: true
+```
+或shell中执行：
+```shell
+qm set xxx -tablet true
+```
+然后重新启动即可。 `xxx` 是虚拟机 id
