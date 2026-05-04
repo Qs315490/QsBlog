@@ -11,7 +11,8 @@ updated: 2026-02-09 16:51:51
 要了解每个[英特尔®显卡家族](https://www.intel.cn/content/www/cn/zh/support/articles/000093216/graphics/processor-graphics.html)支持哪种显卡虚拟化技术，请参阅下表：
 产品家族|支持的显卡虚拟化技术
 -|-
-英特尔® Arc™ Pro B 系列独立显卡家族（过去称为 `Battlemage`）|单根 IO 虚拟化 （SR-IOV）
+英特尔® Core™ Ultra 处理器（系列 3） 处理器家族（以前称为 Panther Lake）|`不支持`
+英特尔® Arc™ Pro B 系列独立显卡家族（过去称为 `Battlemage`）|单根 IO 虚拟化 （SR-IOV）- 必须使用锐炫专业版驱动程序 32.0.101.8306 或更高版本
 英特尔® Arc™ B 系列独立显卡家族（过去称为 `Battlemage`）|`不支持`
 英特尔® Core™ Ultra 处理器（系列 2） 处理器家族（以前称为 `Arrow Lake`）|单根 IO 虚拟化 （SR-IOV）
 英特尔® Core™ Ultra 处理器（系列 2） 处理器家族（以前称为 `Lunar Lake`）|`不支持`
@@ -47,6 +48,8 @@ updated: 2026-02-09 16:51:51
 ### 安装headers头文件
 ```bash
 apt install pve-headers-$(uname -r)
+# 大于8.x版本用这个
+apt install proxmox-headers-$(uname -r)
 ```
 ### 安装构建工具
 ```bash
