@@ -23,8 +23,8 @@ updated: 2026-02-09 16:51:51
 英特尔® Arc™ A 系列独立显卡家族（过去称为 `Alchemist`）|`不支持`
 第 12 代智能英特尔® 酷睿™处理器家族（过去称为 `Alder Lake`）|单根 IO 虚拟化 （SR-IOV）
 第十一代智能英特尔® 酷睿™处理器家族（前身为 `Tiger Lake`）|`不支持`
-第十一代智能英特尔® 酷睿™处理器家族（过去称为 `Rocket Lake`）|英特尔® Graphics Virtualization Technology –g （GVT-g）
-第十代智能英特尔® 酷睿™处理器家族（过去称为 `Ice Lake`）|英特尔® Graphics Virtualization Technology –g （GVT-g）
+第十一代智能英特尔® 酷睿™处理器家族（过去称为 `Rocket Lake`）|实测`不支持`
+第十代智能英特尔® 酷睿™处理器家族（过去称为 `Ice Lake`）|实测`不支持`
 第十代智能英特尔® 酷睿™处理器家族（过去称为 `Comet Lake`|英特尔® Graphics Virtualization Technology –g （GVT-g）
 第九代智能英特尔® 酷睿™处理器家族（以前称为 `Coffee Lake Refresh`）|英特尔® Graphics Virtualization Technology –g （GVT-g）
 第八代智能英特尔® 酷睿™处理器家族（过去称为 `Amber Lake`）|英特尔® Graphics Virtualization Technology –g （GVT-g）
