@@ -50,6 +50,8 @@ updated: 2026-02-09 16:51:51
 apt install pve-headers-$(uname -r)
 # 大于8.x版本用这个
 apt install proxmox-headers-$(uname -r)
+# 或者安装 最新内核和headers
+apt install pve-headers
 ```
 ### 安装构建工具
 ```bash
@@ -64,13 +66,15 @@ wget -O /tmp/i915-sriov-dkms_2025.07.22_amd64.deb "http://dl.yangwenqing.com/web
 ```
 适用于`6.12 ~ 6.19`内核的i915-sriov驱动，下载到临时目录/tmp/
 ```bash
-wget -O /tmp/i915-sriov-dkms_2026.02.04_amd64.deb "http://dl.yangwenqing.com/webos/link/4a03e8873eea4aaeaa1532927134b830/i915-sriov-dkms_2026.02.04_amd64.deb"
+wget -O /tmp/i915-sriov-dkms_2026.02.04_amd64.deb "https://cdn.gh-proxy.com/https://github.com/strongtz/i915-sriov-dkms/releases/download/2026.03.05.1/i915-sriov-dkms_2026.03.05.1_amd64.deb"
+```
+适用于`6.17.x ~ 7.0.x`内核的i915-sriov驱动，下载到临时目录/tmp/
+```bash
+wget -O /tmp/i915-sriov-dkms_2026.05.03_amd64.deb "https://cdn.gh-proxy.com/https://github.com/strongtz/i915-sriov-dkms/releases/download/2026.05.03/i915-sriov-dkms_2026.05.03_amd64.deb"
 ```
 ### 安装SR-IOV驱动
-如果你的PVE内核是`Linux6.8 ~ 6.16`的版本则安装`i915-sriov-dkms_2025.07.22_amd64.deb`  
-如果你的PVE内核是`Linux6.12 ~ 6.19`的版本则安装`i915-sriov-dkms_2026.02.04_amd64.deb`
 ```bash
-dpkg -i /tmp/i915-sriov-dkms*.deb
+apt install /tmp/i915-sriov-dkms*.deb
 ```
 经过漫长等待完成后，检查安装是否成功，运行
 ```bash
@@ -119,11 +123,9 @@ apt install -y sysfsutils
 ```bash
 echo 3 > /sys/devices/pci0000:00/0000:00:02.0/sriov_numvfs
 ```
-或者持久化到`/etc/sysfs.conf`文件中，重启后依然生效
+或者持久化到`/etc/sysfs.conf`文件中，重启后依然生效。不过只配置这个文件重启才生效。
 ```bash
 echo "devices/pci0000:00/0000:00:02.0/sriov_numvfs = 3" > /etc/sysfs.conf
-# 应用配置文件, 重启也行
-sysctl -p
 ```
 ### 验证是否开启核显SRIOV
 使用lspci命令查看核显信息，有如下内容则成功开启核显
