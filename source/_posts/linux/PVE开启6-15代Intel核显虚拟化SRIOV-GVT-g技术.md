@@ -66,11 +66,11 @@ wget -O /tmp/i915-sriov-dkms_2025.07.22_amd64.deb "http://dl.yangwenqing.com/web
 ```
 适用于`6.12 ~ 6.19`内核的i915-sriov驱动，下载到临时目录/tmp/
 ```bash
-wget -O /tmp/i915-sriov-dkms_2026.02.04_amd64.deb "https://cdn.gh-proxy.com/https://github.com/strongtz/i915-sriov-dkms/releases/download/2026.03.05.1/i915-sriov-dkms_2026.03.05.1_amd64.deb"
+wget -O /tmp/i915-sriov-dkms_2026.03.05.2_amd64.deb "https://cdn.gh-proxy.com/hhttps://github.com/strongtz/i915-sriov-dkms/releases/download/2026.03.05.2/i915-sriov-dkms_2026.03.05.2_amd64.deb"
 ```
 适用于`6.17.x ~ 7.0.x`内核的i915-sriov驱动，下载到临时目录/tmp/
 ```bash
-wget -O /tmp/i915-sriov-dkms_2026.05.03_amd64.deb "https://cdn.gh-proxy.com/https://github.com/strongtz/i915-sriov-dkms/releases/download/2026.05.03/i915-sriov-dkms_2026.05.03_amd64.deb"
+wget -O /tmp/i915-sriov-dkms_2026.05.06_amd64.deb "https://cdn.gh-proxy.com/https://github.com/strongtz/i915-sriov-dkms/releases/download/2026.05.06/i915-sriov-dkms_2026.05.06_amd64.deb"
 ```
 ### 安装SR-IOV驱动
 ```bash
