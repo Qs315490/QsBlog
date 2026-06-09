@@ -50,8 +50,8 @@ updated: 2026-02-09 16:51:51
 apt install pve-headers-$(uname -r)
 # 大于8.x版本用这个
 apt install proxmox-headers-$(uname -r)
-# 或者安装 最新内核和headers
-apt install pve-headers
+# 或者安装 默认内核的headers
+apt install proxmox-default-headers
 ```
 ### 安装构建工具
 ```bash
