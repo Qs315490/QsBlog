@@ -16,7 +16,46 @@ adb shell cmd locale set-app-locales <PACKAGE_NAME> [--user <USER_ID>] [--locale
 ```
 仍然可以单独设置应用的语言，也就是说功能还在，只是入口被隐藏了。于是他为这项功能编写了一个「前端」，也就是 `Language Selector`。 由于 `Language Selector 只是 adb shell 命令的前端`，因此首先需要系统底层版本为 Android 13 及以上，此外 `Language Selector 需要通过 Shizuku 获得合适的权限`来调用 LocaleManager API 进行应用语言的更改。
 
+# cmd locale命令介绍
+修改应用语言设置需要用到 `cmd locale` 命令，`cmd locale` 是 Android 13 引入的命令，用于管理应用语言设置，其命令格式如下：
+```console
+# cmd locale
+Locale manager (locale) shell commands:
+  help
+      Print this help text.
+  set-app-locales <PACKAGE_NAME> [--user <USER_ID>] [--locales <LOCALE_INFO>][--delegate <FROM_DELEGATE>]
+      Set the locales for the specified app.
+      --user <USER_ID>: apply for the given user, the current user is used when unspecified.
+      --locales <LOCALE_INFO>: The language tags of locale to be included as a single String separated by commas.
+                 eg. en,en-US,hi
+                 Empty locale list is used when unspecified.
+      --delegate <FROM_DELEGATE>: The locales are set from a delegate, the value could be true or false. false is the default when unspecified.
+  get-app-locales <PACKAGE_NAME> [--user <USER_ID>]
+      Get the locales for the specified app.
+      --user <USER_ID>: get for the given user, the current user is used when unspecified.
+  set-app-localeconfig <PACKAGE_NAME> [--user <USER_ID>] [--locales <LOCALE_INFO>]
+      Set the override LocaleConfig for the specified app.
+      --user <USER_ID>: apply for the given user, the current user is used when unspecified.
+      --locales <LOCALE_INFO>: The language tags of locale to be included as a single String separated by commas.
+                 eg. en,en-US,hi
+                 Empty locale list is used when typing a 'empty' word
+                 NULL is used when unspecified.
+  get-app-localeconfig <PACKAGE_NAME> [--user <USER_ID>]
+      Get the locales within the override LocaleConfig for the specified app.
+      --user <USER_ID>: get for the given user, the current user is used when unspecified.
+```
+列举几个常用的命令：
+设置应用语言
+```console
+adb shell cmd locale set-app-locales com.nexon.bluearchive --user 0 --locales zh-TW
+```
+获取应用语言
+```console
+adb shell cmd locale get-app-locales com.nexon.bluearchive --user 0
+```
+
 # Language Selector介绍
+<font color="red">这软件已经很久没有维护了，且不支持通过root权限设置应用语言，只要Android相关接口不变动依然可以正常使用。</font>
 Language Selector 提供了两种方式来管理应用语言，  
 第一种方式就是进入 Language Selector，选择要修改语言的应用*点击修改；  
 第二种方式是首先在 Language Selector 内通过长按语言列表中语言项将其置项，然后在系统的快速磁贴中添加 Language Selector 的磁贴，打开需要修改语言的应用点击磁贴将应用修改为前面被置项的语言。
