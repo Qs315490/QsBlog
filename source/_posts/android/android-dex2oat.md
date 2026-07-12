@@ -1,7 +1,7 @@
 ---
 title: Android 手动触发 dex2oat
-tags: [Android, 优化, dex2oat]
-categories: [Android, 优化]
+tags: [android, 优化, dex2oat]
+categories: [android, 优化]
 description: ''
 date: 2025-10-15 22:27:29
 updated: 2025-10-15 22:27:29

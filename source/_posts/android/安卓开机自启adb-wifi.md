@@ -2,7 +2,7 @@
 title: "Android开机自启动ADB服务和开启ADB WiFi"
 date: 2020-1-1
 updated: 2020-1-1
-tag: [linux,android,adb]
+tag: [android,adb]
 categories: [android]
 ---
 
